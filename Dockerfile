@@ -13,6 +13,7 @@ SHELL ["/bin/bash", "--login", "-c"]
 source /opt/conda/etc/profile.d/conda.sh
 conda activate DRAM
 
+
 # This is my alternative to adding the path
 #RUN source activate /opt/conda/envs/DRAM/
 
