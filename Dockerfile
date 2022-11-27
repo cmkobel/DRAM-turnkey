@@ -10,8 +10,8 @@ SHELL ["/bin/bash", "--login", "-c"]
 
 
 # Found an even better alternative
-source /opt/conda/etc/profile.d/conda.sh
-conda activate DRAM
+RUN source /opt/conda/etc/profile.d/conda.sh
+RUN conda activate DRAM
 
 
 # This is my alternative to adding the path
