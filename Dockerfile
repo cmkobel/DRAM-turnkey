@@ -8,8 +8,18 @@ RUN conda env create -f DRAM/environment.yaml --name DRAM
 
 SHELL ["/bin/bash", "--login", "-c"]
 
+
+# Found an even better alternative
+source /opt/conda/etc/profile.d/conda.sh
+conda activate DRAM
+
 # This is my alternative to adding the path
-RUN source activate /opt/conda/envs/DRAM/
+#RUN source activate /opt/conda/envs/DRAM/
+
+
+
+
+
 
 
 # Instead of jumping through loops to activate the conda env, we can just load the bin-directory.
