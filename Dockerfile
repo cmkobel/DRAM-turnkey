@@ -9,13 +9,20 @@ RUN conda env create -f DRAM/environment.yaml --name DRAM
 SHELL ["/bin/bash", "--login", "-c"]
 
 
+
+RUN wget http://ns9864k.web.sigma2.no/TheMEMOLab/cmkobel/dram_bak_2022_sep.tar.gz
+RUN tar -xf dram_bak_2022_sep.tar.gz
+RUN ls -lh DRAM || echo could not
+
+
+
 # Load conda so we can activate the environment
 RUN source /opt/conda/etc/profile.d/conda.sh
 RUN conda activate /opt/conda/envs/DRAM
 
 
 
-####
+#### Old below
 
 
 # This is my alternative to adding the path
