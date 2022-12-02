@@ -10,7 +10,7 @@ SHELL ["/bin/bash", "--login", "-c"]
 
 
 
-RUN wget http://ns9864k.web.sigma2.no/TheMEMOLab/cmkobel/dram_bak_2022_sep.tar.gz
+RUN wget --quiet http://ns9864k.web.sigma2.no/TheMEMOLab/cmkobel/dram_bak_2022_sep.tar.gz
 RUN tar -xf dram_bak_2022_sep.tar.gz
 RUN ls -lh DRAM || echo could not
 
